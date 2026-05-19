@@ -478,7 +478,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    border: #000 solid 1px;
+    padding: 1rem;
 }
 /*Utvalgte Prosjekter Img*/
 .prosjekter-bokser section img {
