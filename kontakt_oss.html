@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_BBL</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/7aededd387.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <!--header-->
+    <header>
+        <div class="logo">
+            <p><strong>Byggmester</strong></p>
+            <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
+        </div>
+
+        <!--HAMBURGER MEMU-->
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Meny">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!--DESKTOP + MOBIL NAVBAR-->
+        <nav id="main-nav">
+            <a href="home.html" class="nav-link">FORSIDE</a>
+
+            <div class="dropdown">
+                <a href="tjenester.html" class="dropdown-toggle nav-link">TJENESTER <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">REHABILITERING</a></li>
+                    <li><a href="#">BAD OG VÅTROM</a></li>
+                    <li><a href="#">TAK</a></li>
+                    <li><a href="#">VINDUER OG DØRER</a></li>
+                    <li><a href="#">TILBYGG OG PÅBYGG</a></li>
+                    <li><a href="#">NYBYGG</a></li>
+                </ul>
+            </div>
+
+            <a href="galleri_portofolio.html" class="nav-link">PROSJEKTER</a>
+            <a href="om_oss.html" class="nav-link">OM OSS</a>
+            <a href="kontakt_oss.html" class="nav-link">KONTAKT</a>
+
+            <a class="phone-btn" href="tel:90044124"><i class="fa-solid fa-phone"></i>900 44 124</a>
+        </nav>
+    </header>
+    
+    <!--main-->
+    <main>
+        <!--HERO TEXT-->
+        <section class="hero hero-kun-tekst">
+            <div class="hero-text">
+                <h1>KONTAKT OSS OM DITT OPPDRAG</h1>
+                <p>Ta kontakt hvis du ønsker hjelp med rehabilitering, bad/våtrom, tak, vinduer og dører, tilbygg eller nybygg. Vi hjelper privatkunder i Halden og Fredrikstad-området med både mindre og større oppdrag.</p>
+            </div>
+        </section>
+
+        <!--de to bokseen med infomarjson om kontakt dem og ringe dem-->
+        <div class="kontakt-layout">
+        
+            <div class="venstre-bokser">
+            <!--KONTAKT INFOMARSJON BOKSEN-->
+            <div class="kontakt-kort">
+                    <h3>KONTAKTINFORMASJON</h3>
+                    <p><strong>Telefon:</strong> 900 44 124</p>
+                    <p><strong>E-post:</strong> post@bjornlarsen.no</p>
+                    <p><strong>Område:</strong> Halden, Fredrikstad og omegn</p>
+                </div>
+
+                <!--VIL DU HELLER RINGE OSS BOKSEN-->
+            <div class="ring-kort">
+                    <p><i class="fa-solid fa-phone"></i>VIL DU HELLER RINGE OSS?</p>
+                    <p>Du kan også nå oss på telefon for en prat om ditt prosjekt</p>
+                    <a class="phone-btn" href="tel:90044124">RING 900 44 124</a>
+                </div>
+                </div>
+
+                <!--SEND EN FORESPØRSEL SKJEMA-->
+            <form class="form" id="kontakt-form">
+                <!--send en forespøselk overskrift-->
+                <h2>SEND EN FORESPØRSEL</h2>
+
+                <!--INPUT FELTER OG DEMS SINE NAVN(TING KAN ENDRES UNDERVESI)-->
+                <!--NAVN + TLF SIDE BY SIDE-->
+                <section class="form-rad">
+                    <!--NAVN-->
+                    <div class="form-gruppe">
+                        <label for="navn">NAVN</label>
+                        <input type="text" id="navn">
+                    </div>
+
+                    <!--TELEFON-->
+                    <div class="form-gruppe">
+                        <label for="tlf">TELEFON</label>
+                        <input type="tel" id="tlf" placeholder="f.eks: 900 44 124">
+                    </div>
+                </section>
+
+                <!--E-POST full bredde-->
+                <div class="form-gruppe">
+                    <label for="e-post">E-POST</label>
+                    <input type="email" id="e-post">
+                </div>
+
+                <!--HVA ØNSKER + HVOR ER SIDE BY SIDE-->
+                <section class="form-rad">
+                    <!--HVA ØNSKER DU HJELP MED-->
+                    <div class="form-gruppe">
+                        <label for="ønsker">HVA ØNSKER DU HJELP MED?</label>
+                        <select id="ønsker" name="ønsker">
+                            <option value="" disabled selected hidden>Velg tjeneste...</option>
+                            <option value="rehablitering">REHABILITERING</option>
+                            <option value="bad/våtrom">BAD OG VÅTROM</option>
+                            <option value="tak">TAKARBEID</option>
+                            <option value="vinduer og dører">VINDUER OG DØRER</option>
+                            <option value="tilbygg/påbygg">TILBYGG OG PÅBYGG</option>
+                            <option value="nybygg">NYBYGG</option>
+                        </select>
+                    </div>
+
+                    <!--HVOR ER OPPDRAGET-->
+                    <div class="form-gruppe">
+                        <label for="hvor-er">HVOR ER OPPDRAGET?</label>
+                        <input type="text" id="hvor-er">
+                    </div>
+                </section>
+
+                <!--MEDLING/BESKRIVELSE full bredde-->
+                <div class="form-gruppe">
+                    <label for="mld">MELDING/BESKRIVELSE</label>
+                    <textarea id="mld" name="melding" placeholder="Beskriv kort hva du ønsker hjelp med"></textarea>
+                </div>
+
+                <!--SEND HENDEVLSE KANPPEN-->
+                <button type="submit">SEND HENVENDELSE</button>
+
+                <!--FORM INFO TEKST-->
+                <p class="form-info">Når du sender en forespørsel, bruker vi informasjonen til å forstå behovet ditt og ta kontakt for videre avklaring. Ved behov avtaler vi befaring for å få bedre oversikt over arbeid, omfang og mulige løsninger. Informasjonen brukes kun til å følge opp henvendelsen din og deles ikke med uvedkommende.</p>
+            </form>
+        </div>
+
+            <!--OFTE STILTE SPØRSMÅL-->
+        <div class="faq-container">
+            <!--OVERSKIRFT OVER SPØRSMÅLENE-->
+            <h2>OFTE STILTE SPØRSMÅL</h2>
+
+            <!--SPØRSMÅL 1-->
+            <!--SPØRSMÅLET FELTER-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    TAR DERE OGSÅ MINDRE OPPDRAG?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+                <!--SVAR PÅ SPØRSMÅL 1-->
+                <!--SVARET PÅ SPØRSMÅLET-->
+                <div class="faq-svar">
+                    <p>Ja, vi hjelper med både mindre og større oppdrag i privatmarkedet.</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 2-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    KOMMER DERE PÅ BEFARING?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 2-->
+            <div class="faq-svar">
+                    <p>Ved behov avtaler vi befaring for å få bedre oversikt over arbeidet, omfanget og mulige løsninger.</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 3-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    KAN JEG FÅ ET OVERSLAG ELLER TILBUD?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 3-->
+            <div class="faq-svar">
+                    <p>Når vi har nok oversikt over prosjektet, kan vi gi et bedre grunnlag for overslag eller tilbud</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 4-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    HVOR JOBBER DERE?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 4-->
+            <div class="faq-svar">
+                    <p>Vi har hovedområde i Halden og tar også oppdrag i Fredrikstad-området.</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 5-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    HVA SKJER ETTER AT JEG SENDER FORESPØRSELEN?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 5-->
+            <div class="faq-svar">
+                    <p>Vi ser på henvendelsen og tar kontakt for videre avklaring. Ved behov avtaler vi en befaring før løsning, omfang og neste steg vurderes nærmere.</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 6-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    HVA BØR JEG HA KLART FØR JEG TAR KONTAKT?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 6-->
+            <div class="faq-svar">
+                    <p>Det holder å beskrive kort hva du ønsker hjelp med og hvor oppdraget gjelder. Vi hjelper deg videre med avklaringen.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!--footer-->
+        <footer>
+        <div class="footer-top">
+
+            <div class="footer-logo">
+                <p><strong>Byggmester</strong></p>
+                <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
+                <div class="footer-badges">
+                    <img src="img/badge1.png" alt="Mester">
+                    <img src="img/badge2.png" alt="Sentralt godkjent">
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4><strong>SIDER</strong></h4>
+                <a href="#">Forside</a>
+                <a href="#">Tjenester</a>
+                <a href="#">Prosjekter</a>
+                <a href="#">Om oss</a>
+                <a href="#">Kontakt</a>
+            </div>
+
+            <div class="footer-col">
+                <h4><strong>TJENESTER</strong></h4>
+                <a href="#">Rehabilitering</a>
+                <a href="#">Bad og våtrom</a>
+                <a href="#">Takarbeid</a>
+                <a href="#">Vinduer og dører</a>
+                <a href="#">Tilbygg og påbygg</a>
+                <a href="#">Nybygg</a>
+            </div>
+
+            <div class="footer-col">
+                <h4><strong>KONTAKT</strong></h4>
+                <p>Tlf: 900 44 124</p>
+                <p>E-post: post@bjornlarsen.no</p>
+                <p>Adresse: Haldenveien 1, 1750 Halden</p>
+                <p><strong>FØLG OSS</strong></p>
+                <div class="social-icons">
+                    <a href="#"><img src="img/facebook_icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+
+            <div class="footer-bottom">
+                <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑</a> <!--HUSK DETTE SKAL VÆRE EN PIL!!-->
+                <p>&copy; 2026 Byggmester Bjørn Larsen eftf. Alle rettigheter reservert.</p>    
+                <a href="#">Personvern</a>
+            </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+    </body>
+</html>
