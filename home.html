@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_BBL</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/7aededd387.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--ADD ARROW ICONS ON ALL BUTTONS THAT NEED IT LIKE WITHIN VAARE TJENESTER-->
+    <!--header-->
+    <header>
+        <div class="logo">
+            <p><strong>Byggmester</strong></p>
+            <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
+        </div>
+
+        <!--HAMBURGER MEMU-->
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Meny">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!--DESKTOP + MOBIL NAVBAR-->
+        <nav id="main-nav">
+            <a href="home.html" class="nav-link active">FORSIDE</a>
+
+            <div class="dropdown">
+                <a href="tjenester.html" class="dropdown-toggle nav-link">TJENESTER <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="tjen-dropdown-menu">
+                    <li><a href="#">REHABILITERING</a></li>
+                    <li><a href="#">BAD OG VÅTROM</a></li>
+                    <li><a href="#">TAK</a></li>
+                    <li><a href="#">VINDUER OG DØRER</a></li>
+                    <li><a href="#">TILBYGG OG PÅBYGG</a></li>
+                    <li><a href="#">NYBYGG</a></li>
+                </ul>
+            </div>
+
+            <a href="galleri_portofolio.html" class="nav-link">PROSJEKTER</a>
+            <a href="om_oss.html" class="nav-link">OM OSS</a>
+            <a href="kontakt_oss.html" class="nav-link">KONTAKT</a>
+
+            <a class="phone-btn" href="tel:90044124"><i class="fa-solid fa-phone"></i>900 44 124</a>
+        </nav>
+    </header>
+
+    <!--main-->
+    <main>
+        <!--Hero section/forside bilde og tekst introduksjon-->
+        <section class="hero"> <!--Forside bilde med introduksjons tekst--><!--heter ogsaa en Hero-->
+            <!--her kommer en div klasse for å få teksten til oppføre seg riktig-->
+            <div class="hero-text">
+                <h1>BYGGMESTER I HALDEN OG FREDRIKSTAD</h1>
+                <p>Vi hjelper privatkunder med rehabilitering, bad, tak, vinduer og tilbygg. Enten oppdraget er stort eller lite, sørger vi for høy kvalitet og en ryddig prosess fra start til slutt.</p> 
+            <div class="hero-buttons">
+                <button class="hero-buttons-sort">VÅRE TJENSTER<i class="fa-solid fa-arrow-right"></i></button> <!--den har en pil paa seg denne knappen-->
+                <button class="hero-buttons-hvit">TA KONTAKT</button>
+        </div>
+            </div>
+        <div class="hero-img">
+            <img src="img/bilde_1.webp" alt="Byggmester og tømrer i arbeid for privatkunde i Halden og Fredrikstad"><!--stort bilde-->
+        </div>
+
+        <div class="hero-badges">
+                <img src="img/badge1.png" alt="mester badgen"><!--DE MINDRE BILDENEN ER BILDER AV VERDIGHEST KLISTEMERKENEN DEMS altsaa dems badges maybe a div for badges too?-->
+                <img src="img/badge2.png" alt="sentralt godksjent badgen">
+            </div>
+        </section>
+
+        <!--Våre tjenster section på forside-->
+        <section class="tjenester">
+            <h2><strong>VÅRE TJENESTER</strong></h2>
+            <div class="tjenester-grid">
+
+            <!--kort 1-->
+            <div class="kort">
+                <img src="img/bilde_2.webp" alt="Rehabilitering av bolig utført av byggmester for privatkunde">
+                <h3>REHABILITERING</h3>
+                <p>Oppussing, utbedringer og oppgraderinger i
+                bolig.</p>
+                <button>LES MER OM REHABILITERING<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!--kort 2-->
+            <div class="kort">
+                <img src="img/bilde_3.webp" alt="Oppussing og rehabilitering av bad og våtrom i bolig">
+                <h3>BAD OG VÅTROM</h3>
+                <p>Bad og våtrom som del av oppussing og rehabilitering.</p>
+                <button>LES MER OM BAD OG VÅTROM<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!--kort 3-->
+            <div class="kort">
+                <img src="img/bilde_4.webp" alt="Takarbeid og skifte av tak på bolig eller fritidsbolig">
+                <h3>TAKARBEID</h3>
+                <p>Skifte av tak, takrehabilitering og andre takarbeider.</p>
+                <button>LES MER OM TAKARBEID<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!--kort 4-->
+            <div class="kort">
+                <img src="img/bilde_5.webp" alt="Bytte av vinduer og dører i bolig med solid håndverk">
+                <h3>VINDUER OG DØRER</h3>
+                <p>Bytte og oppgradering av vinduer og dører i bolig.</p>
+                <button>LES MER OM VINDUER OG DØRER<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!--kort 5-->
+            <div class="kort">
+                <img src="img/bilde_6.webp" alt="Tilbygg og påbygg som gir mer plass i eksisterende bolig">
+                <h3>TILBYGG OG PÅBYGG</h3>
+                <p>Mer plass, bedre funksjon og tydeligere rammer for prosjektet.</p>
+                <button>LES MER OM TILBYGG OG PÅBYGG<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!--kort 6-->
+            <div class="kort">
+                <img src="img/bilde_7.webp" alt="Nybygg av bolig, hytte eller garasje utført av byggmester">
+                <h3>NYBYGG</h3>
+                <p>Oppføring av nye boliger, hytter, garasjer og andre frittstående bygg.</p>
+                <button>LES MER OM NYBYGG<i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            </div>
+        </section>
+
+        <!--Små og større oppdrag blokk-->
+<section class="oppdrag">
+    <div class="oppdrag-left">
+        <h2>SMÅ OG STØRRE OPPDRAG</h2>
+    </div>
+    <div class="oppdrag-text">
+        <p>Vi utfører både mindre og større byggmester- og tømreroppdrag i privatmarkedet, fra vinduer, tak og bad til mer omfattende rehabilitering, tilbygg og nybygg.</p>
+    </div>
+    <div class="oppdrag-img">
+        <img src="img/bilde_8.webp" alt="Tømrer utfører mindre byggmesteroppdrag med fokus på detaljer">
+    </div>
+</section>
+
+        <!--slik går du videre-->
+        <section class="steg">
+            <h2>SLIK GÅR DET VIDERE</h2>
+            <div class="steg-grid">
+
+            <div class="steg-kort">
+            <span class="steg-nummer">01</span>
+            <h3>DU TAR KONTAKT</h3>
+            <p>Ring oss eller send en forespørsel. Fortell kort hva du trenger hjelp med og hvor oppdraget gjelder.</p>
+            </div>
+
+            <div class="steg-kort">
+            <span class="steg-nummer">02</span>
+            <h3>VI AVKLARER BEHOVET</h3>
+            <p>Ved behov kommer vi på befaring for å avklare jobb, omfang og mulige løsninger.</p>
+            </div>
+            
+            <div class="steg-kort">
+            <span class="steg-nummer">03</span>
+            <h3>VIDERE VURDERING</h3>
+            <p>Når vi har nok oversikt, får du en
+            tydeligere avklaring av omfang,
+            løsning og neste steg</p>
+            </div>
+
+            <div class="steg-kort">
+            <span class="steg-nummer">04</span>
+            <h3>GJENNOMFØRING OG OPPFØLGING</h3>
+            <p>Når arbeidet starter, legger vi vekt på ryddig kommunikasjon, solid utførelse og god oppfølging.</p>
+            </div>
+
+            </div>
+        </section>
+
+        <!--utvalgte Prosjketer innen rehabilitering-->
+
+        <!--utvalgte prosjekter-->
+        <div>
+        <!--prosjekter header-->
+        <div class="prosjekter-header">
+                <h2>UTVALGTE PROSJEKTER</h2>
+                <a href="#">SE ALLE PROSJEKTER<i class="fa-solid fa-arrow-right"></i></a> <!--husk pil ikon på denne!!-->
+                <hr>
+            </div>
+
+        <!--utvalgte prosjekter section class for begge boksene-->
+        <section class="prosjekter-bokser">
+
+            <!--boks 1-->
+            <section>
+                <img src="img/bilde_9.webp" alt="Totalrenovering av moderne bad med fliser og våtromsløsninger">
+                <span>
+                    <p class="prosjekter-kate">BAD/VÅTROM</p>
+                    <div>
+                        <h3>TOTALRENOVERING AV BAD</h3> 
+                        <p >Komplett fornyelse av bad med moderne løsninger og flisvalg</p>
+                        <!--<hr>-->
+                        <p class="behov"><strong>BEHOV:</strong> Gammelt bad med behov for full oppgradering.</p>
+                    </div>
+                </span>
+            </section>
+
+            <!--boks 2-->
+            <section>
+                <img src="img/bilde_10.webp" alt="Rehabilitert enebolig med innvendige og utvendige oppgraderinger">
+                <span>
+                    <p class="prosjekter-kate">REHABILITERING</p>
+                    <div>
+                        <h3>REHABILITERING AV ENEBOLIG</h3> 
+                        <p>Innvendige og utvendige oppgraderinger</p>
+                        <p class="behov"><strong>BEHOV:</strong> Fornye boligen og oppgradere eldre bygningsdeler.</p>
+                    </div>
+                </span>
+            </section>
+        </section>
+        </div>
+
+        <!--25 års erfaring-->
+        <section class="erfaring">
+            <div class="erfaring-tall">
+            <span>25</span>
+            <p>års erfaring</p>
+            </div>
+
+            <div class ="erfaring-tekst">
+            <h3>Lokal erfaring siden 2001</h3>
+            <p>Byggmester Bjørn Larsen Eftf. AS er en lokal byggmesterbedrift med hovedområde i Halden og oppdrag også i Fredrikstad-området. Bedriften ble startet i 2001 og har 25 år i 2026. Vi legger vekt på solide løsninger, tydelig kommunikasjon og arbeid som varer over tid.</p>
+            </div>
+        </section>
+
+        <!--klar for en prat?-->
+        <section class="prat">
+            <h2>Klar for prat?</h2>
+            <p>Har du et prosjekt du vil avklare? Ta kontakt med oss for en første prat om behov, omfang og videre prosess.</p>
+            <div class="prat-buttons">
+            <button>SEND FORESPØRSEL</button> <!--vil bli en hreff der du kommer inn paa send foore sporsmaal siden-->
+            <button>RING OSS</button> <!--blir en telefon knapp-->
+            </div>
+        </section>
+
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-top">
+
+            <div class="footer-logo">
+                <p><strong>Byggmester</strong></p>
+                <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
+                <div class="footer-badges">
+                    <img src="img/badge1.png" alt="Mester">
+                    <img src="img/badge2.png" alt="Sentralt godkjent">
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4><strong>SIDER</strong></h4>
+                <a href="#">Forside</a>
+                <a href="#">Tjenester</a>
+                <a href="#">Prosjekter</a>
+                <a href="#">Om oss</a>
+                <a href="#">Kontakt</a>
+            </div>
+
+            <div class="footer-col">
+                <h4><strong>TJENESTER</strong></h4>
+                <a href="#">Rehabilitering</a>
+                <a href="#">Bad og våtrom</a>
+                <a href="#">Takarbeid</a>
+                <a href="#">Vinduer og dører</a>
+                <a href="#">Tilbygg og påbygg</a>
+                <a href="#">Nybygg</a>
+            </div>
+
+            <div class="footer-col">
+                <h4><strong>KONTAKT</strong></h4>
+                <p>Tlf: 900 44 124</p>
+                <p>E-post: post@bjornlarsen.no</p>
+                <p>Adresse: Haldenveien 1, 1750 Halden</p>
+                <p><strong>FØLG OSS</strong></p>
+                <div class="social-icons">
+                    <a href="#"><img src="img/facebook_icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+
+            <div class="footer-bottom">
+                <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑</a> <!--HUSK DETTE SKAL VÆRE EN PIL!!-->
+                <p>&copy; 2026 Byggmester Bjørn Larsen eftf. Alle rettigheter reservert.</p>    
+                <a href="#">Personvern</a>
+            </div>
+    </footer>
+
+    <!--js-script-kobling-linken-->
+    <script src="javascript.js"></script>
+</body>
+</html>
