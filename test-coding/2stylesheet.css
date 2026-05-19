@@ -1,0 +1,110 @@
+/*CSS er for Mobil Først*/
+/*For hele forsiden*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+body {
+    font-family: "Roboto", sans-serif, Arial;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/*Grid*/
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.grid img {
+    max-width: 100%;
+    height: auto;
+    direction: block;
+    box-sizing: border-box;
+}
+
+/*Container*/
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem;
+}
+
+/*Flex*/
+
+/*ikoner-style-size*/
+
+/*Header*/
+
+/*Logo*/
+
+/*Nav*/
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+}
+
+/*Dropdown Meny Tjenster*/
+
+/*Meny telefon knapp*/
+
+/*Hamburger Meny*/
+
+/*Main*/
+
+/*Hero*/
+/*Hero Text*/
+/*Hero H1 Tag*/
+/*Hero P tag*/
+
+/*Hero Img*/
+.hero-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/*Hero Bevis badges*/
+
+/*Hero Knapper*/
+
+/*Våre tjenester*/
+
+/*Små Og Større Oppdrag*/
+
+/*Slik går du videre*/
+
+/*Utvalgte Prosjekter*/
+
+/*25Års Erfaring*/
+
+/*Klar For Prat?*/
+
+/*Footer*/
+
+/*Footer Logo*/
+
+/*Footer Badges*/
+
+/*Footer Text*/
+
+/*Media Queries*/
+
+/*Extra Liten Skjerm*/
+
+/*Liten Skjerm*/
+
+/*Medium Skjerm*/
+
+/*Stor Skjerm*/
+
+/*Extra Stor Skerjm*/
