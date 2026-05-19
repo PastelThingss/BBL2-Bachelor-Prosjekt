@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,18 +22,21 @@
 
         <!--HAMBURGER MEMU-->
         <button class="hamburger" onclick="toggleMenu()" aria-label="Meny">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <span class="hamburger-label">MENY</span>
+    <span class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </span>
+</button>
 
-        <!--DESKTOP + MOBIL NAVBAR-->
+        <!--MOBIL NAVBAR-->
         <nav id="main-nav">
             <a href="home.html" class="nav-link active">FORSIDE</a>
 
             <div class="dropdown">
                 <a href="tjenester.html" class="dropdown-toggle nav-link">TJENESTER <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="tjen-dropdown-menu">
+                <ul class="dropdown-menu">
                     <li><a href="#">REHABILITERING</a></li>
                     <li><a href="#">BAD OG VÅTROM</a></li>
                     <li><a href="#">TAK</a></li>
@@ -57,12 +60,12 @@
         <section class="hero"> <!--Forside bilde med introduksjons tekst--><!--heter ogsaa en Hero-->
             <!--her kommer en div klasse for å få teksten til oppføre seg riktig-->
             <div class="hero-text">
-                <h1>BYGGMESTER I HALDEN OG FREDRIKSTAD</h1>
-                <p>Vi hjelper privatkunder med rehabilitering, bad, tak, vinduer og tilbygg. Enten oppdraget er stort eller lite, sørger vi for høy kvalitet og en ryddig prosess fra start til slutt.</p> 
-            <div class="hero-buttons">
-                <button class="hero-buttons-sort">VÅRE TJENSTER<i class="fa-solid fa-arrow-right"></i></button> <!--den har en pil paa seg denne knappen-->
-                <button class="hero-buttons-hvit">TA KONTAKT</button>
-        </div>
+                    <h1>BYGGMESTER I HALDEN OG FREDRIKSTAD</h1>
+                    <p>Vi hjelper privatkunder med rehabilitering, bad, tak, vinduer og tilbygg. Enten oppdraget er stort eller lite, sørger vi for høy kvalitet og en ryddig prosess fra start til slutt.</p> 
+                <div class="hero-buttons">
+                    <button class="hero-buttons-sort">VÅRE TJENeSTER<i class="fa-solid fa-arrow-right"></i></button> <!--den har en pil paa seg denne knappen-->
+                    <button class="hero-buttons-hvit">TA KONTAKT</button>
+                </div>
             </div>
         <div class="hero-img">
             <img src="img/bilde_1.webp" alt="Byggmester og tømrer i arbeid for privatkunde i Halden og Fredrikstad"><!--stort bilde-->
@@ -192,7 +195,7 @@
         <section class="prosjekter-bokser">
 
             <!--boks 1-->
-            <section>
+            <article>
                 <img src="img/bilde_9.webp" alt="Totalrenovering av moderne bad med fliser og våtromsløsninger">
                 <span>
                     <p class="prosjekter-kate">BAD/VÅTROM</p>
@@ -203,10 +206,10 @@
                         <p class="behov"><strong>BEHOV:</strong> Gammelt bad med behov for full oppgradering.</p>
                     </div>
                 </span>
-            </section>
+            </article>
 
             <!--boks 2-->
-            <section>
+            <article>
                 <img src="img/bilde_10.webp" alt="Rehabilitert enebolig med innvendige og utvendige oppgraderinger">
                 <span>
                     <p class="prosjekter-kate">REHABILITERING</p>
@@ -216,7 +219,7 @@
                         <p class="behov"><strong>BEHOV:</strong> Fornye boligen og oppgradere eldre bygningsdeler.</p>
                     </div>
                 </span>
-            </section>
+            </article>
         </section>
         </div>
 

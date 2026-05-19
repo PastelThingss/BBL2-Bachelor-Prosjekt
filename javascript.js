@@ -67,3 +67,23 @@ document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.add('active');
     }
 });
+
+// MOBIL DROPDOWN FOR TJENESTER
+// Hindrer navigering på mobil og åpner dropdown i stedet
+document.querySelector('.dropdown-toggle').addEventListener('click', function(e) {
+    // Bare på mobil (hamburger er synlig)
+    if (window.innerWidth < 992) {
+        e.preventDefault(); // stopper navigering til tjenester.html
+        const dropdown = this.closest('.dropdown');
+        dropdown.classList.toggle('open');
+    }
+});
+
+function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    const btn = document.querySelector('.hamburger');
+    if (nav) {
+        nav.classList.toggle('open');
+        btn.classList.toggle('active'); // bytter mellom hamburger og X
+    }
+}
