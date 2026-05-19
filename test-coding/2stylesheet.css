@@ -8,25 +8,20 @@
 
 /*Body*/
 body {
-    font-family: "Roboto", sans-serif, Arial;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #000;
+    background: #fff;
 }
 
-/*Grid*/
-.grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-}
-
-.grid img {
-    max-width: 100%;
+img {
+    display: block;
+    width: 100%;
     height: auto;
-    direction: block;
-    box-sizing: border-box;
+    object-fit: cover;
 }
 
 /*Container*/
@@ -37,13 +32,43 @@ body {
     padding: 0.9rem;
 }
 
+/*Grid*/
+.grid {
+    display: grid;
+    flex-direction: column;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.grid img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /*Flex*/
 
 /*ikoner-style-size*/
 
 /*Header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #000;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+}
 
 /*Logo*/
+.logo p {
+    font-size: 0.85rem;
+    line-height: 1.2;
+    font-family: times-new-roman;
+}
 
 /*Nav*/
 nav ul {
@@ -54,57 +79,787 @@ nav ul {
     padding: 0;
 }
 
+#main-nav {
+    padding: 0 1rem 1rem;
+}
+
+#main-nav .nav-link:not(.phone-btn):not(.dropdown-toggle) {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+    letter-spacing: 0.03em;
+}
+
+.nav-link.dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+}
+
+#main-nav .phone-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
 /*Dropdown Meny Tjenster*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.75rem 0rem;
+    color: #888;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f0f0f7;
+    letter-spacing: 0.03rem;
+}
+
+.dropdown-menu li a:hover {
+    background: #000;
+    color: #fff;
+}
 
 /*Meny telefon knapp*/
+.phone-btn {
+    background: #000;
+    color: #fff;
+    padding: 0.85rem 1.25rem;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.phone-btn:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
 
 /*Hamburger Meny*/
+.hamburger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+}
+ 
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+ 
+.hamburger-icon span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+ 
+/* X animasjon når menyen er åpen */
+.hamburger.active .hamburger-icon span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+ 
+.hamburger.active .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+}
+ 
+.hamburger.active .hamburger-icon span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Hamburger knapp */
+.hamburger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+}
+ 
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+ 
+.hamburger-icon span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+ 
+/* X animasjon når menyen er åpen */
+.hamburger.active .hamburger-icon span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+ 
+.hamburger.active .hamburger-icon span:nth-child(2) {
+    opacity: 0;
+}
+ 
+.hamburger.active .hamburger-icon span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
 
 /*Main*/
+/*Main Nav*/
+#main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #000;
+    padding: 0 1rem 1.5rem;
+    z-index: 99;
+}
+
+#main-nav.open {
+    display: flex;
+}
+
+.nav-link {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #e0e0e0;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link.active::after {
+    position: absolute;
+    width: 100%;
+    content: '';
+    background: #000;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+}
 
 /*Hero*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+}
 /*Hero Text*/
 /*Hero H1 Tag*/
+.hero-text h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
 /*Hero P tag*/
+.hero-text p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
 
 /*Hero Img*/
-.hero-img {
+.hero-img img {
     display: block;
     width: 100%;
     height: auto;
 }
 /*Hero Bevis badges*/
+.hero-badges {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
 
 /*Hero Knapper*/
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.hero-buttons-sort,
+.hero-buttons-hvit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-family: inherit;
+    cursor: pointer;
+    border: 1px solid #000;
+    text-transform: uppercase;
+}
+
+.hero-buttons-sort {
+    background: #000;
+    color: #fff;
+}
+
+.hero-buttons-sort:hover {
+    background: #fff;
+    color: #000;
+}
+
+.hero-buttons-hvit {
+    background: #fff;
+    color: #000;
+}
+
+.hero-buttons-hvit:hover {
+    background: #000;
+    color: #fff;
+}
 
 /*Våre tjenester*/
+/*Tjenetser Kortene*/
+
+/*Kort*/
+
+/*Kort Img*/
+.kort img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*Kort Buttons Våre tjenester*/
+.kort button {
+    margin: 0.5rem;
+    padding: 0.65rem 0.75rem;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: stretch;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 
 /*Små Og Større Oppdrag*/
+.oppdrag {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background-color: #f5f5f5;
+}
+/*Oppdrag For Små Og Større*/
+
+/*Oppdrag Img For Små Og Større*/
+.oppdrag-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
 
 /*Slik går du videre*/
+.steg {
+    padding: 2rem 1rem;
+}
+.steg-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.steg-nummer {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #e0e0e0;
+    display: block;
+    margin-bottom: 0.5rem;
+}
 
 /*Utvalgte Prosjekter*/
+.prosjekter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/*Utvalgte Prosjekter Bokser*/
+.prosjekter-bokser {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+/*Utvalgte Prosjekter Img*/
+.prosjekter-bokser section img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
 
 /*25Års Erfaring*/
+.erfaring {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    background-color: #1a1a1a;
+    color: #fff;
+}
 
 /*Klar For Prat?*/
+.prat {
+    padding: 2rem 1rem;
+    text-align: center;
+}
 
 /*Footer*/
+.footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
 
 /*Footer Logo*/
+.footer-logo {
+    height: auto; 
+    font-family: "time-new-roman", serif;
+    font-style: time-new-roman;
+}
+
+.footer-logo p {
+    font-style: time-new-roman;
+}
+
+#bjørn {
+    font-size: 1.5rem;
+}
 
 /*Footer Badges*/
+.footer-badges {
+    display: flex;
+    gap: 8px;
+    margin-top: 0.75rem;
+}
 
+.footer-badges img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
 /*Footer Text*/
+.footer-col a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-col p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.footer-bottom a {
+    color: #333;
+    text-decoration: none;
+}
+
+/*CSS FOR KONTAKT OSS SIDEN*/
+
+/*Hero Teksten For Kontakt Siden*/
+.hero-kun-tekst {
+    flex-direction: column;
+    border: none;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+.hero-kun-tekst .hero-text h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 0.75rem;
+}
+
+.hero-kun-tekst .hero-text p {
+    font-size: 0.95rem;
+    color: #444;
+    max-width: 700px;
+}
+
+/*Kontakt Oss Kortene*/
+.kontakt-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/*Venstre boksene - Info + Ring Oss*/
+.venstre-bokser {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Kontakt info box */
+.kontakt-kort {
+    border: 1px solid #000;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.kontakt-kort h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.25rem;
+}
+
+.kontakt-kort p {
+    font-size: 0.9rem;
+}
+
+/* Ring oss box */
+.ring-kort {
+    background: #000;
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.ring-kort p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.ring-kort p:first-child {
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ring-kort .phone-btn {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.85rem;
+}
+
+.ring-kort .phone-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*Fore Spørsels Arket (form) styleing*/
+.form {
+    border: 1px solid #000;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.form h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+/* form-rad: stacked on mobile */
+.form-rad {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.form-gruppe {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-gruppe label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.form-gruppe input,
+.form-gruppe select,
+.form-gruppe textarea {
+    border: 1px solid #000;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    width: 100%;
+    background: #fff;
+    appearance: none;
+}
+
+.form-gruppe textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Custom select arrow */
+.form-gruppe select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23000' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+/* Submit button */
+.form button[type="submit"] {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.form button[type="submit"]:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.form-info {
+    font-size: 0.78rem;
+    color: #666;
+    border-top: 1px solid #000;
+    padding-top: 0.75rem;
+    line-height: 1.6;
+}
+
+/*Ofte Stilte Spørsmål*/
+.faq-item {
+    border: 1px solid #000;
+    margin-bottom: 0.5rem;
+}
+
+.faq-spørsmål {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 1.5rem;
+    background: #fff;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-pil {
+    font-size: 1.4rem;
+    transition: 0.2s;
+}
+
+.faq-spørsmål.open .faq-pil {
+    transform: rotate(180deg);
+}
+
+.faq-svar {
+    display: none;
+    padding: 1rem 1.5rem 1.5rem;
+    border-top: 1px solid #000;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.faq-svar.open {
+    display: block;
+}
 
 /*Media Queries*/
 
-/*Extra Liten Skjerm*/
+/*Medium Skjerm 768px*/
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        padding: 2rem;
+    }
 
-/*Liten Skjerm*/
+    .form-rad {
+        grid-template-columns: 1fr 1fr; /* side by side on tablet+ */
+    }
 
-/*Medium Skjerm*/
+    .hero-kun-tekst {
+        padding: 3rem 2rem;
+    }
 
-/*Stor Skjerm*/
+    .hero-kun-tekst .hero-text h1 {
+        font-size: 2.2rem;
+    }
 
-/*Extra Stor Skerjm*/
+    .kontakt-layout {
+        flex-direction: row;      /* info left, form right */
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .venstre-bokser {
+        width: 280px;
+        flex-shrink: 0;
+    }
+
+    .form-rad {
+        grid-template-columns: 1fr 1fr; /* side by side on tablet+ */
+    }
+
+    .faq-container {
+        padding: 2rem;
+    }
+}
+
+/*Stor Skjerm 992px*/
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-toggle i {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-toggle i {
+        transition: transform 0.25s ease;
+    }
+
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        width: auto;
+        padding: 0;
+        border: none;
+        gap: 1.5rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+/*Extra Stor Skerjm 1200px*/
+@media (min-width: 1200px) {
+.hero-buttons-sort {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.hero-buttons-sort:hover {
+    background: #fff;
+    color: #000;
+}
+
+.hero-kun-tekst {
+    padding: 4rem;
+}
+
+.hero-kun-tekst .hero-text h1 {
+    font-size: 2.8rem;
+}
+
+.kontakt-layout {
+    padding: 2rem 4rem;
+    gap: 3rem;
+}
+
+.venstre-bokser {
+    width: 300px;
+}
+
+.faq-container {
+    padding: 2rem 4rem;
+}
+}
