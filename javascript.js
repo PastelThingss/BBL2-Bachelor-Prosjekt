@@ -21,13 +21,6 @@ function changeSlide(btn, direction) {
 
 }
 
-function toggleMenu() {
-    const nav = document.getElementById('main-nav');
-    if (nav) {
-        nav.classList.toggle('open');
-    }
-}
-
 //KONTAKT SKJEMA
 const kontaktForm = document.getElementById('kontakt-form');
 if (kontaktForm) {
