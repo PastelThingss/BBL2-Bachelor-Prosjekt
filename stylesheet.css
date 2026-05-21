@@ -596,12 +596,13 @@ nav ul {
     bottom: 0;
     background: #fff;
     color: #000;
-    padding: 1rem;
+    padding: 0.1rem 0.3rem;
     font-size: 1rem;
     font-weight: 600;
     z-index: 10;
-    border-radius: 4px;
-    white-space: nowrap;
+    border: #000 solid 1px;
+    border-left: #000 solid 1px;
+    border-top: #000 solid 1px;
 }
 
 /*Utvalgte Prosjekter Bokser*/
@@ -619,6 +620,8 @@ nav ul {
         p
         {
             padding: 1rem;
+            font-weight: 550;
+            font-size: 1rem;
         }
     }
     .prosjekter-kate{
@@ -626,11 +629,19 @@ nav ul {
         font-weight: bold;
     }
 }
+
 /*Utvalgte Prosjekter Img*/
 .prosjekter-bokser section img {
     width: 100%;
     height: 220px;
     object-fit: cover;
+}
+
+.behov {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: 0.6rem;
 }
 
 /*25Års Erfaring*/
