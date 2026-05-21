@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+/*icons*/
+.fa-solid {
+    padding-left: 0.5rem;
+    padding-right: 0.1rem;
+}
+
 /*Body*/
 body {
     font-family: "Roboto", Arial, sans-serif;
@@ -42,6 +48,7 @@ img {
     flex-direction: column;
     gap: 1rem;
     grid-template-columns: 1fr;
+    margin-top: 1.5rem;
 }
 
 .grid img img {
@@ -65,7 +72,7 @@ header {
     top: 0;
     background: #fff;
     z-index: 100;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 /*Logo*/
@@ -327,7 +334,6 @@ nav ul {
     flex-direction: column;
     gap: 1.5rem;
     border: #000 solid 1px;
-    padding: 2rem;
 }
 /*Hero Text*/
 /*Hero H1 Tag*/
@@ -337,12 +343,17 @@ nav ul {
     line-height: 1.2;
     margin-bottom: 1rem;
     letter-spacing: -0.01em;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
 }
 /*Hero P tag*/
 .hero-text p {
     font-size: 0.95rem;
     color: #444;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 /*Hero Img*/
@@ -361,8 +372,8 @@ nav ul {
 }
 
 .hero-badges img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     object-fit: contain;
 }
 
@@ -372,9 +383,25 @@ nav ul {
     flex-direction: column;
     gap: 0.75rem;
     margin-top: 1.5rem;
+    margin-left: 1.5rem;
 }
 
-.hero-buttons-sort,
+.hero-buttons-sort {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-family: inherit;
+    cursor: pointer;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
 .hero-buttons-hvit {
     display: inline-flex;
     align-items: center;
@@ -388,6 +415,7 @@ nav ul {
     cursor: pointer;
     border: 1px solid #000;
     text-transform: uppercase;
+    align-self: flex-start;
 }
 
 .hero-buttons-sort {
@@ -414,12 +442,32 @@ nav ul {
 /*Tjenetser Kortene*/
 .tjenester{
     margin-bottom: .5rem;
+    margin-top: 4rem;
+}
+
+.tjenester h2 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 1rem;
 }
 
 /*Kort*/
 .kort {
     border: 1px solid #000;
+    display: grid;
 }
+
+/*kort-tekst*/
+
+.kort h3 {
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.kort p {
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
 /*Kort Img*/
 .kort img {
     width: 100%;
@@ -429,7 +477,7 @@ nav ul {
 
 /*Kort Buttons Våre tjenester*/
 .kort button {
-    margin: 0.5rem;
+    margin: 1.3rem;
     padding: 0.65rem 0.75rem;
     background: #fff;
     color: #000;
@@ -454,6 +502,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     border: 1px solid #000;
+    margin-top: 3.5rem;
 }
 /*Oppdrag For Små Og Større*/
 .oppdrag-text {
@@ -463,11 +512,15 @@ nav ul {
 }
 
 .oppdrag-left h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 1rem;
     white-space: nowrap;
+    justify-content: center;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /*Oppdrag Img For Små Og Større*/
@@ -479,8 +532,22 @@ nav ul {
 
 /*Slik går du videre*/
 .steg {
-    padding: 2rem 1rem;
+    margin-bottom: 3.5rem;
 }
+
+.steg h2 {
+    border-bottom: #000 solid 1px;
+    padding-bottom: 1rem;
+}
+
+.steg h3 {
+    padding-bottom: 1rem;
+}
+
+.steg p {
+    font-weight: 550;
+}
+
 .steg-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -498,20 +565,45 @@ nav ul {
 /*Utvalgte Prosjekter*/
 .prosjekter-header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 1rem 0.5rem;
+    justify-content: left;
     flex-wrap: wrap;
     gap: 0.5rem;
     border-bottom: 1px solid #000   ;
-    margin: 1rem 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .prosjekter-header a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
 }
+
+.prosjekter-container {
+    position: relative;
+    border: #000 solid 1px;
+}
+
+.prosjekter-container img {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+.carousel-counter {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 10;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
 /*Utvalgte Prosjekter Bokser*/
 .prosjekter-bokser {
     display: flex;
@@ -539,33 +631,6 @@ nav ul {
     width: 100%;
     height: 220px;
     object-fit: cover;
-}
-
-/*BUTTON STIL FOR MOBIL VERSION AVN A HERF LINKEN*/
-.mobs-prosjekter button {
-    margin: 0.5rem;
-    padding: 0.65rem 0.75rem;
-    background: #fff;
-    color: #000;
-    border: 1px solid #000;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    align-self: stretch;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.mobs-prosjekter button:hover {
-    background: #000;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-/*DESKTOP OPPDRAG FOR Å IKEK VISE DEKSTOP STIL PÅ DEN MEN HELLER MOBIL BUTTON*/
-.desk-prosjekter {
-    display: none;
 }
 
 /*25Års Erfaring*/
@@ -1021,6 +1086,7 @@ nav ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+        margin-top: 1.5rem;
     }
 
     /* Oppdrag: side om side */
