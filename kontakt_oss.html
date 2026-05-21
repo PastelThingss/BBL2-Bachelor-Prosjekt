@@ -147,17 +147,21 @@
             </form>
         </div>
 
+
+            <!--OVERSKIRFT OVER SPØRSMÅLENE-->
+            <section id="spørs-toppers">
+                <h2>OFTE STILTE SPØRSMÅL</h2>
+            </section>
             <!--OFTE STILTE SPØRSMÅL-->
         <div class="faq-container">
-            <!--OVERSKIRFT OVER SPØRSMÅLENE-->
-            <h2>OFTE STILTE SPØRSMÅL</h2>
-
+            
             <!--SPØRSMÅL 1-->
             <!--SPØRSMÅLET FELTER-->
+            
             <div class="faq-item">
                 <button class="faq-spørsmål" onclick="toggleFaq(this)">
                     TAR DERE OGSÅ MINDRE OPPDRAG?
-                    <span class="faq-pil">&#8964;</span>
+                    <i class="faq-pil fa-solid fa-chevron-down"></i>
                 </button>
 
                 <!--SVAR PÅ SPØRSMÅL 1-->
@@ -171,7 +175,7 @@
             <div class="faq-item">
                 <button class="faq-spørsmål" onclick="toggleFaq(this)">
                     KOMMER DERE PÅ BEFARING?
-                    <span class="faq-pil">&#8964;</span>
+                    <i class="faq-pil fa-solid fa-chevron-down"></i>
                 </button>
 
             <!--SVAR PÅ SPØRSMÅL 2-->
@@ -184,7 +188,7 @@
             <div class="faq-item">
                 <button class="faq-spørsmål" onclick="toggleFaq(this)">
                     KAN JEG FÅ ET OVERSLAG ELLER TILBUD?
-                    <span class="faq-pil">&#8964;</span>
+                    <i class="faq-pil fa-solid fa-chevron-down"></i>
                 </button>
 
             <!--SVAR PÅ SPØRSMÅL 3-->
@@ -197,7 +201,7 @@
             <div class="faq-item">
                 <button class="faq-spørsmål" onclick="toggleFaq(this)">
                     HVOR JOBBER DERE?
-                    <span class="faq-pil">&#8964;</span>
+                    <i class="faq-pil fa-solid fa-chevron-down"></i>
                 </button>
 
             <!--SVAR PÅ SPØRSMÅL 4-->
@@ -210,7 +214,7 @@
             <div class="faq-item">
                 <button class="faq-spørsmål" onclick="toggleFaq(this)">
                     HVA SKJER ETTER AT JEG SENDER FORESPØRSELEN?
-                    <span class="faq-pil">&#8964;</span>
+                    <i class="faq-pil fa-solid fa-chevron-down"></i>
                 </button>
 
             <!--SVAR PÅ SPØRSMÅL 5-->
@@ -223,7 +227,7 @@
             <div class="faq-item">
                 <button class="faq-spørsmål" onclick="toggleFaq(this)">
                     HVA BØR JEG HA KLART FØR JEG TAR KONTAKT?
-                    <span class="faq-pil">&#8964;</span>
+                    <i class="faq-pil fa-solid fa-chevron-down"></i>
                 </button>
 
             <!--SVAR PÅ SPØRSMÅL 6-->
@@ -237,25 +241,31 @@
     </main>
 
     <!--footer-->
-        <footer>
+        <footer >
         <div class="footer-top">
-
+            
             <div class="footer-logo">
-                <p><strong>Byggmester</strong></p>
+                <p id="byggmester"><strong>Byggmester</strong></p>
                 <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
+
                 <div class="footer-badges">
                     <img src="img/badge1.png" alt="Mester">
                     <img src="img/badge2.png" alt="Sentralt godkjent">
                 </div>
             </div>
 
+            <div class="footer-info">
+                <p>Ditt hjem - vårt fag</p>
+                <p>Org.nr: 983 123 456</p>
+            </div>
+            
             <div class="footer-col">
                 <h4><strong>SIDER</strong></h4>
-                <a href="home.html">Forside</a>
-                <a href="tjenester.html">Tjenester</a>
-                <a href="galleri_portofolio.html">Prosjekter</a>
-                <a href="om_oss.html">Om oss</a>
-                <a href="kontakt_oss.html">Kontakt</a>
+                <a href="#">Forside</a>
+                <a href="#">Tjenester</a>
+                <a href="#">Prosjekter</a>
+                <a href="#">Om oss</a>
+                <a class="a-bottoms" href="#">Kontakt</a>
             </div>
 
             <div class="footer-col">
@@ -265,7 +275,7 @@
                 <a href="#">Takarbeid</a>
                 <a href="#">Vinduer og dører</a>
                 <a href="#">Tilbygg og påbygg</a>
-                <a href="#">Nybygg</a>
+                <a class="a-bottoms" href="#">Nybygg</a>
             </div>
 
             <div class="footer-col">
@@ -273,18 +283,21 @@
                 <p>Tlf: 900 44 124</p>
                 <p>E-post: post@bjornlarsen.no</p>
                 <p>Adresse: Haldenveien 1, 1750 Halden</p>
-                <p><strong>FØLG OSS</strong></p>
+
+
+                <h4 id="følg-oss"><strong>FØLG OSS</strong></h4>
                 <div class="social-icons">
-                    <a href="#"><img src="img/facebook_icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="img/instagram_icon.png" alt="Instagram"></a>
+                    <a  href="#"><img src="img/facebook_icon.png" alt="Facebook"></a>
                 </div>
+                <span class="a-bottoms"></span>
             </div>
+
         </div>
 
             <div class="footer-bottom">
-                <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑</a> <!--HUSK DETTE SKAL VÆRE EN PIL!!-->
+                <!--<a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑</a>-->
                 <p>&copy; 2026 Byggmester Bjørn Larsen eftf. Alle rettigheter reservert.</p>    
-                <a href="#">Personvern</a>
+                <a  href="#">Personvern</a>
             </div>
     </footer>
 

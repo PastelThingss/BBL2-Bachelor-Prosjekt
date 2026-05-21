@@ -493,6 +493,7 @@ nav ul {
     flex-direction: column;
     border: 1px solid #000;
     margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
 }
 /*Oppdrag For Små Og Større*/
 .oppdrag-text {
@@ -804,6 +805,11 @@ nav ul {
 
 
 /*Footer*/
+footer {
+    border-top: #000 solid 1px;
+    padding-top: 0.5rem;
+}
+
 .footer-top {
         grid-template-columns: 1fr;
         padding: 1rem;
@@ -832,6 +838,17 @@ nav ul {
     }
 
 /*Footer Logo*/
+.footer {
+    padding-top:1rem;
+    border-top: #000 solid 1px;
+}
+
+#fot-bor {
+    padding-top: 1rem;
+    border-top: #000 solid 1px;
+    padding-bottom: 1rem;
+}
+
 .footer-logo {
     height: auto; 
     font-family: "time-new-roman", serif;
@@ -1103,17 +1120,35 @@ nav ul {
 }
 
 .form-info {
-    font-size: 0.78rem;
+    font-size: 0.9rem;
     color: #666;
     border-top: 1px solid #000;
-    padding-top: 0.75rem;
-    line-height: 1.6;
+    padding: 1.5rem 1.8rem 1.8rem;
+    line-height: 1.55;
+    margin: 0 -1.52rem -1.7rem;
 }
 
 /*Ofte Stilte Spørsmål*/
+.faq-container {
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+}
+
+.faq-container h2 {
+    padding-bottom: 1rem;
+    
+}
+
 .faq-item {
     border: 1px solid #000;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.9rem;
+    margin-top: 1rem;
+}
+
+#spørs-toppers h2 {
+    padding-top: 3.5rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1rem;
 }
 
 .faq-spørsmål {
