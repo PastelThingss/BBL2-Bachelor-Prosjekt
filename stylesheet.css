@@ -469,7 +469,7 @@ nav ul {
 /*Kort Buttons Våre tjenester*/
 .kort button {
     margin: 1.3rem;
-    padding: 0.65rem 0.75rem;
+    padding: 0.85rem 1.5rem;
     background: #fff;
     color: #000;
     border: 1px solid #000;
@@ -661,6 +661,7 @@ nav ul {
     letter-spacing: 0.05em;
     margin-top: 1rem;
     margin-bottom: 3rem;
+    padding: 0.85rem 1.5rem;
 }
 
 .btn-se-alle:hover {
