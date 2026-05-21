@@ -428,6 +428,16 @@ nav ul {
     color: #fff;
 }
 
+/*buttons hover hero*/
+.hero-buttons-sort:hover {
+    background: #fff;
+    color: #000;
+}
+
+.hero-buttons-hvit:hover {
+    background: #000;
+    color: #fff;
+}
 /*Våre tjenester*/
 /*Tjenetser Kortene*/
 .tjenester{
@@ -802,6 +812,19 @@ nav ul {
     text-transform: uppercase;
     align-self: flex-start;
     margin-top: 0.5rem;
+}
+
+/*prat hover knapper*/
+.prat-buttons-hvit:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.prat-buttons-sort:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
 }
 
 
