@@ -610,25 +610,32 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    article
-    {
-        border: 1px solid #000;
+    
+    
         h3
         {
-            padding: 0 1rem;
+            padding: 0rem 1rem;
         }
         p
         {
-            padding: 1rem;
-            font-weight: 550;
-            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            font-weight: 550;           
         }
     }
-    .prosjekter-kate{
-        color: #888;
-        font-weight: bold;
-    }
+    
+
+
+.prosjekter-bokser article {
+    border: 1px solid #000;
 }
+
+.prosjekter-kate{
+        color: #888;
+        font-weight: 600;
+        display: flex;
+        justify-content: left;
+        margin-top: 1rem;
+    }
 
 /*Utvalgte Prosjekter Img*/
 .prosjekter-bokser section img {
@@ -638,10 +645,36 @@ nav ul {
 }
 
 .behov {
-    border-top: 1px solid #000;
-    padding-top: 1rem;
+    border-top: 1px solid #000; 
+    font-size: 0.89rem;
+}
+
+.behov strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.91rem;
+}
+
+/*utvalgte propsjekter button*/
+.btn-se-alle {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 0.05em;
     margin-top: 1rem;
-    font-size: 0.6rem;
+    margin-bottom: 3rem;
+}
+
+.btn-se-alle:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 /*25Års Erfaring*/
@@ -650,9 +683,9 @@ nav ul {
     flex-direction: column;
     gap: 1rem;
     flex-direction: column;
-    margin: 1rem;
     border: 1px solid #000;
     margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .erfaring-tall {
@@ -685,17 +718,26 @@ nav ul {
 
 .erfaring-tekst {
     flex: 1;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
 }
 
 .erfaring-tekst h3 {
     font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1rem;
+    flex-direction: column;
+    padding-top: 1rem;
+    white-space: nowrap;
+    padding-bottom: 1rem;
 }
 
 .erfaring-tekst p {
@@ -712,62 +754,92 @@ nav ul {
     text-align: center;
     background: #000;
     color: #fff;
+    margin-bottom: 3rem;
 }
 
 .prat-buttons {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .prat-buttons button {
-    padding: 1rem 2rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border: 1px solid #fff;
+    display: flex;
+    align-self: center;
+}
+
+.prat-buttons-hvit {
     background: #fff;
     color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-family: inherit;
+    cursor: pointer;
     border: 1px solid #000;
-    font-size: 1rem;
-    font-weight: 600;
     text-transform: uppercase;
-    text-decoration: none;
-    padding-left: 12px;
-    padding-right: 12px;
+    align-self: flex-start;
+    margin-top: 1rem;
 }
 
-.prat-buttons button:first-child {
-    background: #fff;
-    color: #000;
-}
-
-.prat-buttons button:last-child {
+.prat-buttons-sort {
     background: #000;
     color: #fff;
     border: 1px solid #fff;
-}
-
-.prat-buttons button:first-child:hover {
-    background: #000;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.prat-buttons button:last-child:hover {
-    background: #fff;
-    color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-family: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin-top: 0.5rem;
 }
 
 
 /*Footer*/
 .footer-top {
         grid-template-columns: 1fr;
+        padding: 1rem;
     }
 
     .footer-bottom {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
+        border-top: #000 solid 1px;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-weight: 500;
     }
 
+    .footer-bottom p {
+        padding-bottom: 1rem;
+    }
+
+    .footer-bottom a {
+        color: #333;
+        text-decoration: none;
+        padding-top: 1rem;
+        font-weight: 557000;
+        font-size: 1.03rem;
+    }
 
 /*Footer Logo*/
 .footer-logo {
@@ -780,38 +852,65 @@ nav ul {
     font-style: time-new-roman;
 }
 
+#byggmester {
+    font-size: 1.1rem;
+    padding-left: 2.92rem;
+}
+
 #bjørn {
     font-size: 1.5rem;
+}
+
+.footer-info {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 /*Footer Badges*/
 .footer-badges {
     display: flex;
     gap: 8px;
-    margin-top: 0.75rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer-badges img {
     width: 55px;
     height: 55px;
     object-fit: contain;
+    
 }
 /*Footer Text*/
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-weight: 500;
+    
+}
+
 .footer-col a {
     color: #333;
     text-decoration: none;
 }
 
-.footer-col p {
+.footer-col h4 {
     font-size: 1rem;
     color: #333;
     line-height: 1.5;
+    padding-bottom: 0.5rem;
 }
 
-.footer-bottom a {
-    color: #333;
-    text-decoration: none;
+.a-bottoms {
+    margin-bottom: 3rem;
 }
+
+#følg-oss {
+    margin-top: 2rem;
+}
+
+
 
 /*CSS FOR KONTAKT OSS SIDEN*/
 
